@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FAFAF7;
+  --color-charcoal: #1A1D23;
+  --color-emerald: #2FBF8F;
+  --color-amber: #E8A94F;
+  --color-ash: #6B7078;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAFAF7;
+  color: #1A1D23;
+}
+
+body {
+  background-color: #FAFAF7;
+  color: #1A1D23;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #2FBF8F;
+  color: #111317;
+}
+
+/* Technical grid background pattern - subtle editorial grid */
+.editorial-grid {
+  background-image: 
+    linear-gradient(to right, rgba(26, 29, 35, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 29, 35, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.editorial-grid-dark {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Technical label styling */
+.tech-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Custom restrained scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D8CF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B4B4A8;
+}
